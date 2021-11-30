@@ -1,0 +1,79 @@
+body,
+body * {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+        sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 80px;
+}
+.header > .logo {
+    height: 40px;
+}
+.header > .menu {
+    display: flex;
+    gap: 20px;
+}
+.header > .menu > .link {
+    font-size: 20px;
+    text-decoration: none;
+    color: #36f;
+}
+.header > .menu > .link:hover {
+    text-decoration: underline;
+}
+
+.content {
+    display: flex;
+    min-height: calc(100vh - 80px);
+    justify-content: space-between;
+    align-items: center;
+    gap: 120px;
+    padding: 80px;
+    text-align: right;
+}
+.content > .hero-img {
+    max-height: 60vh;
+    max-width: 50%;
+}
+.content > .hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-end;
+}
+.content > .hero-text > .main-title {
+    font-size: 80px;
+}
+.content > .hero-text > .main-description {
+    font-size: 30px;
+}
+.content > .hero-text > .btn {
+    padding: 0.3em 1em;
+    font-size: 30px;
+    text-decoration: none;
+    background-color: #36f;
+    color: #fff;
+    border-radius: 0.2em;
+}
+
+@media (max-width: 900px) {
+    .content {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+    .content > .hero-img {
+        max-height: 60vh;
+        max-width: 90%;
+    }
+    .content > .hero-text {
+        align-items: center;
+    }
+}
